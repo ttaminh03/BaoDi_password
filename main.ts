@@ -1,6 +1,3 @@
-let VALUE = 0
-let PASSWORD_INPUT = ""
-let PASSWORD = ""
 input.onButtonPressed(Button.A, function () {
     VALUE += 1
     basic.showNumber(VALUE)
@@ -13,11 +10,11 @@ input.onButtonPressed(Button.B, function () {
     VALUE += -1
     basic.showNumber(VALUE)
 })
-basic.forever(function () {
-    PASSWORD = "1234"
-    PASSWORD_INPUT = ""
-    VALUE = 0
-})
+let VALUE = 0
+let PASSWORD_INPUT = ""
+let PASSWORD = "1234"
+PASSWORD_INPUT = ""
+VALUE = 0
 basic.forever(function () {
     if (PASSWORD_INPUT == PASSWORD) {
         basic.showString("C'mon in")
