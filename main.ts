@@ -14,6 +14,7 @@ input.onButtonPressed(Button.B, function () {
     basic.showNumber(VALUE)
 })
 basic.forever(function () {
+    basic.showNumber(0)
     PASSWORD = "1234"
     PASSWORD_INPUT = ""
     VALUE = 0
